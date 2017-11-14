@@ -1,0 +1,107 @@
+main{
+    position: relative;
+    .bg{
+        top:0;
+        left:0;
+        position: fixed;
+        z-index: -1;
+        width:0; 
+        height:0; 
+        border-width: 38vh 163vw;
+        border-style:solid; 
+        border-color:#fee117 white white #fee117;
+    }
+    .row{
+        margin-bottom: 6vh;
+        &:first-child{
+            position: relative;
+            margin-top: 8vh;
+            display: flex;
+        }
+        .title{
+            color: #f6655e;
+            font-size: 4rem;
+            font-style: italic;
+            position: absolute;
+            &.title-01{
+                top: 35%;
+                left: 3%;
+            }
+            &.title-02{
+                top: 55%;
+                right:3%;
+            }
+        }
+        .wrapper{
+            width: 80vw;
+            margin:0 auto;
+            text-align: center;
+        }
+        .logo-wrapper{
+            height: 60vh;
+            width: 60vw;
+            border: .5vw solid #f6655e;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            .logo{
+                margin-top: 5vh;
+                width: 24vw;
+                height: 13vh;
+                background-image: url('../images/logo-font.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: 50%;
+                background-color:#f6655e;
+                border-radius: 20px;
+            }
+            .sub{
+                color:#f6655e;
+                font-style: italic;
+            }
+        }
+        .button-donwload{
+            background-color: #f6655e;
+            color: white;
+            border-radius: 10px;
+            font-weight: 800;
+            font-size: 1.2rem;
+            padding: 2vh 8vw;
+        }
+        .icons{
+            font-weight: 800;
+            font-size: .8rem;
+            color:#f6655e;
+            display: flex;
+            .icon{
+                background-image: url('../images/icons.png');
+                background-repeat: no-repeat;
+                background-size: 80vw;
+                background-position-y: 5px;
+                border:.5vw solid #f6655e;
+                border-radius: 6px;
+                margin-left:3vw;
+                vertical-align: middle;
+                padding: 0 1vw;
+                &.icon-01{
+                    background-position-x: -7%;
+                }
+                &.icon-02{
+                    background-position-x: 30%;
+                }
+                &.icon-03{
+                    background-position-x: 68%;
+                }
+                &.icon-04{
+                    background-position-x: 105%;
+                }
+                p{
+                    margin-top: 6vh;
+                    margin-bottom: 1vh;
+                }
+            }
+                
+        }
+    }
+}

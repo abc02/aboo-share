@@ -15,7 +15,7 @@ module.exports = {
         filename: '[name].js',
     },
     resolve: {
-        extensions: ['.js', '.jsx'],
+        extensions: ['.js'],
         alias: {
             "@": path.sourcePath,
             "styles": "@/styles"

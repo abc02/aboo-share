@@ -12,7 +12,6 @@ module.exports = merge(baseWebpackConfig, {
     compress: false,
     hot: true,
     open: true, //启动服务，自动打开浏览器
-    port : 9000
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
