@@ -31,6 +31,17 @@ module.exports = {
         // 配置编译打包规则
         rules: [
             {
+                test: /\.html$/,
+                use: [ {
+                  loader: 'html-loader',
+                  options: {
+                    minimize: true,
+                    removeComments: true,
+                    collapseWhitespace: true
+                  }
+                }]
+            },
+            {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 use: ['babel-loader']

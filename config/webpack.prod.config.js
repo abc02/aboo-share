@@ -29,7 +29,7 @@ module.exports = merge(baseWebpackConfig, {
       template: path.sourcePath + '/index.html',
       cache: false,
       minify: {
-        collapseInlineTagWhitespace:true,
+        collapseInlineTagWhitespace: true,
         collapseWhitespace: true,
         preserveLineBreaks: true
       }

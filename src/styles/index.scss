@@ -1,5 +1,10 @@
+html,body{
+    overflow: hidden;
+    width:100vw;
+    height: 100vh;
+}
+
 main{
-    position: relative;
     .bg{
         top:0;
         left:0;
@@ -7,7 +12,7 @@ main{
         z-index: -1;
         width:0; 
         height:0; 
-        border-width: 38vh 163vw;
+        border-width: 38vh 100vw;
         border-style:solid; 
         border-color:#fee117 white white #fee117;
     }
@@ -23,13 +28,19 @@ main{
             font-size: 4rem;
             font-style: italic;
             position: absolute;
+            background-repeat: no-repeat;
+            background-size: contain;
+            width:60vw;
+            height: 8vh;
             &.title-01{
-                top: 35%;
-                left: 3%;
+                background-image: url('../images/title-1.png');
+                bottom: 16vh;
+                left: 10vw;
             }
             &.title-02{
-                top: 55%;
-                right:3%;
+                background-image: url('../images/title-2.png');
+                bottom: 5vh;
+                right:10vw;
             }
         }
         .wrapper{
@@ -47,14 +58,11 @@ main{
             align-items: center;
             .logo{
                 margin-top: 5vh;
-                width: 24vw;
-                height: 13vh;
-                background-image: url('../images/logo-font.png');
+                width: 25vw;
+                height: 14vh;
+                background-image: url('../images/logo.png');
                 background-repeat: no-repeat;
                 background-size: contain;
-                background-position: 50%;
-                background-color:#f6655e;
-                border-radius: 20px;
             }
             .sub{
                 color:#f6655e;
