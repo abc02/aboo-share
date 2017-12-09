@@ -1,5 +1,4 @@
 const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('./path')
 
 let base = {
@@ -21,11 +20,6 @@ module.exports = {
             "styles": "@/styles"
         },
     },
-    plugins: [
-        new HtmlWebpackPlugin({
-            template: path.sourcePath + '/index.html'
-        }),
-    ],
 
     module: {
         // 配置编译打包规则

@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "config": {
+    "port": "9020"
+  },
   "scripts": {
+    "opn": "opn http:localhost:9020",
     "clean": "rm -rf build",
     "dev": "webpack-dev-server --color --config ./config/webpack.dev.config.js",
     "prod": "webpack --color --config ./config/webpack.prod.config.js",
@@ -34,6 +38,7 @@
   "dependencies": {
     "animate.css": "^3.5.2",
     "fonts.css": "^1.5.0",
+    "jquery": "^3.2.1",
     "normalize.css": "^7.0.0"
   }
 }

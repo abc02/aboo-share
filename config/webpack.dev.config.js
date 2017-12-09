@@ -1,5 +1,6 @@
 var merge = require('webpack-merge')
 var webpack = require('webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 var baseWebpackConfig = require('./webpack.base.config');
 const path = require('./path')
 
@@ -11,7 +12,8 @@ module.exports = merge(baseWebpackConfig, {
     inline: true,//实时刷新
     compress: false,
     hot: true,
-    open: true, //启动服务，自动打开浏览器
+    host:'0.0.0.0',
+    port: process.env.npm_package_config_port || 8080
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
